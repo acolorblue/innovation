@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On The Concept Of 'This has been done before'</title>
+
+
+		<meta name="pinterest" content="nopin" />
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:site" content="@acolorblue">
+
+	<meta name="twitter:creator" content="@acolorblue">
+
+	<meta name="twitter:title" content="ACOLORBLUE">
+
+	<meta name="twitter:description" content="The Whole Point of Innovation">
+
+	<meta name="twitter:image" content="https://github.com/acolorblue/supportlocalartists/blob/master/Thumbnail/Twitter%20Card%202.JPG?raw=true">
+
+
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link ref="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Open+Sans:400">
+
+	<link rel="stylesheet" href="http://acolorblue.co/fonts/ahamonomonospaced/stylesheet.css" type="text/css"/>
+
+	<link rel="shortcut icon" type="image/png" href="https://40.media.tumblr.com/67552bc8dcdaf7f2a400fdebbaba5a30/tumblr_o22d30IDlo1ulwja9o1_250.png" />
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+
+
+
+<body>
+
+<!-- Text editor concept -->
+<!-- Inspiration from https://dribbble.com/shots/1917567-Text-Editor-Concept -->
+<div class='topbar'>
+  <i class='fa fa-apple'></i>
+</div>
+
+
+<button class="texticon">
+  <i class='fa fa-file-text-o fa-3x'></i>
+  <br>
+  <br>
+  <span>Untitled.txt</span>
+</button>
+
+
+<button class="jpg">
+  <a href="https://twitter.com/acolorblue/status/810649603519311872" target="_blank">
+  <img src="https://pbs.twimg.com/media/Cz_-nUWUUAAwHNo.jpg:large" width="68" height="45" title="'Tate-LaBianca' - Charlie White">
+  </a>
+  <br>
+  <br>
+  <span>'After a 23 Hour 
+    <br>
+    Heart Surgery'.jpg</span>
+</button>
+
+
+<button class="jpg second">
+  <a href="http://acolorblue.co/spencermcmullen" target="_blank">
+  <img src="https://raw.githubusercontent.com/acolorblue/spencermcmullen/master/Screen%20Shot%202017-01-29%20at%2010.18.20%20PM.png" width="78" height="45" title="'Tate-LaBianca' - Charlie White">
+  </a>
+  <br>
+  <br>
+  <span>3D Art Gallery.html</span>
+</button>
+
+
+
+
+
+<div class='app'>
+  <div class='top'>
+    <div class='buttons'>
+      <div class='circle close'>
+      
+      <a onclick="hide('window')" class="closebutton" href="#"><span><strong>x</strong></span></a>
+        
+      </div>
+      
+      <div class='circle minimize'>
+      
+       <a onclick="minimize('window')" class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+        
+      </div>
+      <div class='circle zoom'>
+      
+      <a onclick="zoom('window')"class="zoombutton" href="#"><span><strong>+</strong></span></a>
+        
+      </div>
+    </div>
+    <div class='title'>
+      Untitled.txt
+    </div>
+    <div class='info'>
+      346 words
+    </div>
+    <div class='clear'></div>
+  </div>
+  <div class='main'>
+<!--     <p class='words'>346 words</p> -->
+    <div class='content'>
+      
+     
+     
+     <main class="prompt"> 
+       <h1>On the concept of 'this has been done before'.</h1>
+      
+<p>I felt the need to address this with the snarky "good try tho". First of all, no, this has not been done before. Have there been other 3D Art Galleries? Sure. Have they been done in this specific approach? No. Secondly, this is an absurdly ridiculous concept. Anyone who understands anything about building products knows that being the first to do something is irrelevant if your product is shit.</p>
+  
+<p>The goal was never to build the first 3D Gallery, I wanted to build the best 3D Art Gallery on Earth and we'll constantly keep improving this to achieve that. The first known electric car was invented by Robert Davidson in 1837. The first computer was the ENIAC in 1946, weighing about 50 tons. The first true personal computer was the Altair 8800 in 1974, two years before Wozniak even started working on the Apple 1. IBM created the first touchscreen phone in 1992 called the 'IBM Simon' but I can guarantee you 9/10 people reading this have an iPhone. What if every time somebody made something everyone just said "Okay well that's that"? Instead of looking for ways to completely re-do it and make it incredibly better?</p>
+  
+<p>The whole point of innovating is introducing new methods and products that are also effecient and I believe it's ridiculous to stand in the way of new ideas basing them solely on the fact that something similar might have been done in the past regardless of the actual quality of what was done. I tremendously respect anything that is great and believe if a product is great, you do not replicate it, you admire it and respect what it is doing for the world. But as a human if you see something that is not so good, regardless of the arena, and you believe you personally can do something to either help or drastically improve it, then it is your duty to do so for the rest of the world and humanity co-existing on this planet.</p>
+
+
+ <p class="signature">With Love,</p>
+ <p class="signature">ACOLORBLUE.</p>
+      </main>
+
+      
+      
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+	
+	var $lines = $('.prompt p');
+$lines.hide();
+var lineContents = new Array();
+
+var terminal = function() {
+
+
+  var skip = 0;
+  typeLine = function(idx) {
+    idx == null && (idx = 0);
+    var element = $lines.eq(idx);
+    var content = lineContents[idx];
+    if(typeof content == "undefined") {
+      $('.skip').hide();
+      return;
+    }
+    var charIdx = 0;
+
+    var typeChar = function() {
+      
+// Speed, Was 150, 80 + 25
+      var rand = Math.round(Math.random() * 40) + 25;
+
+      setTimeout(function() {
+        var char = content[charIdx++];
+        element.append(char);
+        if(typeof char !== "undefined")
+          typeChar();
+        else {
+          element.append('<br/><span class="output">' + element.text().slice(9, -1) + '</span>');
+          element.removeClass('active');
+          typeLine(++idx);
+        }
+      }, skip ? 0 : rand);
+    }
+    content = '' + content + '';
+    element.append(' ').addClass('active');
+    typeChar();
+  }
+
+  $lines.each(function(i) {
+    lineContents[i] = $(this).text();
+    $(this).text('').show();
+  });
+
+  typeLine();
+}
+
+terminal();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(".app").draggable({
+  handle: ".top",
+  scroll: false
+});
+
+$("button").draggable({
+  scroll: false,
+  cancel: false
+});
+
+
+$('.close').click(function(){
+    $('.app').fadeOut();
+    $('button.texticon').fadeIn();
+});
+
+$('.minimize').click(function(){
+    $('.app').fadeOut();
+    $('button.texticon').fadeIn();
+});
+
+$('.zoom').click(function(){
+  $('.app').toggleClass('larger', 1000);
+});
+
+// WAS .dblclick
+$('button.texticon').click(function(){
+   $('.app').fadeIn();
+});
+
+$('.content').each(function(){
+    this.contentEditable = false;
+});
+
+
+
+
+
+
+
+// RIGHT CLICK
+
+
+var message="¯|_(ツ)_|¯";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+</script>
+
+</body>
+</html>
